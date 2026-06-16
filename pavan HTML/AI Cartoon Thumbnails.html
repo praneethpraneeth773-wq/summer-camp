@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <title>YouTube Creator Helper</title>
+    <link rel="icon" type="image/png" href="YouTube 2.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #08121c;
+            color: white;
+            overflow-x: hidden;
+        }
+
+
+        body::before {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #00c2ff;
+            filter: blur(180px);
+            opacity: 0.18;
+            top: -150px;
+            left: -150px;
+            z-index: -1;
+        }
+
+
+        header {
+            background: rgba(10, 18, 30, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 25px rgba(0, 194, 255, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #00c2ff;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            border-radius: 15px;
+            background: #00c2ff;
+            padding: 8px;
+            box-shadow: 0 0 20px #00c2ff;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00c2ff, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: 50px auto;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #101b2a, #17283d);
+            border-radius: 25px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow:
+                0 0 25px rgba(0, 194, 255, 0.12),
+                inset 0 0 20px rgba(255, 255, 255, 0.02);
+            transition: 0.4s;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow:
+                0 0 35px rgba(138, 43, 226, 0.4);
+        }
+
+        .card h2,
+        .card h3 {
+            color: #8a2be2;
+            margin-bottom: 20px;
+            font-size: 34px;
+        }
+
+        .card p {
+            color: #d7d7d7;
+            line-height: 1.9;
+            font-size: 20px;
+        }
+
+        .frame-video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 25px;
+            border: 3px solid #00c2ff;
+            box-shadow: 0 0 30px rgba(0, 194, 255, 0.35);
+        }
+
+        .frame-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #aab7c7;
+            font-size: 16px;
+        }
+
+
+        @media(max-width:900px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .logo div {
+                font-size: 26px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .card h2,
+            .card h3 {
+                font-size: 28px;
+            }
+
+            .card p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="logo.png">
+
+            <div>
+                Creator Helper
+            </div>
+        </div>
+
+        <h1>AI Cartoon Thumbnails Info</h1>
+
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>🎨 AI Cartoon Thumbnails</h2>
+
+            <p>
+                Use colorful cartoon characters, glowing outlines,
+                funny face expressions and cinematic backgrounds.
+                AI cartoon thumbnails look very eye-catching and
+                increase clicks on gaming and entertainment videos.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🤖 AI Prompt</h3>
+
+            <div class="prompt-box">
+
+                <p>
+                    Create an ultra high CTR AI cartoon YouTube thumbnail
+                    with 3D cartoon character, glowing effects,
+                    vibrant neon colors, emotional face expression,
+                    cinematic lighting, arrows, circles and blurred background.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h3>🎬 AI Cartoon Thumbnail Tutorial</h3>
+
+        <p>
+            Learn how to create viral AI cartoon thumbnails
+            with glowing colors, 3D effects and animated style.
+        </p>
+
+        <br>
+
+        <div class="frame-video">
+
+            <iframe src="https://www.youtube.com/embed/AJm-uvTCIOY?si=1fj0ZZbN46XmvYGG" title="YouTube video"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <footer>
+            © 2026 Creator Helper | Designed by Pawan
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,547 @@
+<html>
+
+<head>
+
+    <title>Trending Color Combos</title>
+
+    <link rel="icon" type="image/png" href="YouTube 2.png">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #050505;
+            color: white;
+            overflow-x: hidden;
+        }
+
+
+
+        body::before {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #00e5ff;
+            filter: blur(180px);
+            opacity: 0.12;
+            top: -150px;
+            left: -150px;
+            z-index: -1;
+        }
+
+
+
+        header {
+            background: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+            box-shadow:
+                0 0 25px rgba(0, 229, 255, 0.12);
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            font-size: 28px;
+            font-weight: bold;
+            color: #00e5ff;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+
+            border-radius: 15px;
+
+            background: #00e5ff;
+
+            padding: 8px;
+
+            box-shadow:
+                0 0 20px #00e5ff;
+        }
+
+
+
+        header h1 {
+            font-size: 40px;
+            color: #00e5ff;
+
+            text-shadow:
+                0 0 15px #00e5ff;
+        }
+
+
+
+        .container {
+            width: 90%;
+            max-width: 1500px;
+            margin: 60px auto;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 70px;
+            margin-bottom: 70px;
+            color: #00e5ff;
+
+            text-shadow:
+                0 0 20px #00e5ff;
+        }
+
+
+
+        .combo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+        }
+
+
+
+        .combo-card {
+
+            background: linear-gradient(145deg, #111, #1b1b1b);
+
+            border-radius: 30px;
+
+            padding: 35px;
+
+            transition: 0.4s;
+
+            border: 1px solid rgba(255, 255, 255, 0.05);
+
+            box-shadow:
+                0 0 25px rgba(255, 255, 255, 0.05);
+        }
+
+        .combo-card:hover {
+
+            transform: translateY(-10px) scale(1.02);
+
+            box-shadow:
+                0 0 35px rgba(0, 229, 255, 0.25);
+        }
+
+
+
+        .color-box {
+            height: 190px;
+            border-radius: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 28px;
+            font-weight: 700;
+
+            color: white;
+
+            text-align: center;
+
+            box-shadow:
+                0 0 30px rgba(255, 255, 255, 0.1);
+        }
+
+
+
+        .combo-info {
+            margin-top: 25px;
+        }
+
+        .combo-info h2 {
+            font-size: 28px;
+            margin-bottom: 12px;
+            color: #00e5ff;
+        }
+
+        .combo-info p {
+            color: #cfcfcf;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-size: 16px;
+        }
+
+
+
+        @media(max-width:900px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .main-title {
+                font-size: 45px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .combo-info h2 {
+                font-size: 24px;
+            }
+
+            .combo-info p {
+                font-size: 16px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <div class="logo">
+
+            <img src="logo.png">
+
+            <div>
+                Creator Helper
+            </div>
+
+        </div>
+
+        <h1>🎨 Color Combos</h1>
+
+    </header>
+
+
+
+    <div class="container">
+
+        <h1 class="main-title">
+            Trending Color Combos
+        </h1>
+
+
+        <div class="combo-grid">
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #ff0000, #000000);">
+
+                    Red + Black
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>🔥 Gaming Style</h2>
+
+                    <p>
+                        Best for gaming thumbnails,
+                        action videos and intense edits.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #ffee00, #8a2be2);">
+
+                    Yellow + Purple
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>⚡ Viral Thumbnail</h2>
+
+                    <p>
+                        Bright and eye-catching colors
+                        perfect for viral thumbnails.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #00d9ff, #ff00d9);">
+
+                    Neon Blue + Pink
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>💎 Neon Creator Look</h2>
+
+                    <p>
+                        Great for futuristic edits,
+                        AI videos and stylish thumbnails.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #00ff88, #003d1f);">
+
+                    Green + Dark Green
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>⛏️ Minecraft Theme</h2>
+
+                    <p>
+                        Perfect for Minecraft videos,
+                        survival content and challenge thumbnails.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #ff8800, #ff2e63);">
+
+                    Orange + Pink
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>🎬 Trending Shorts</h2>
+
+                    <p>
+                        Excellent for YouTube Shorts,
+                        reels and reaction videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #ffffff, #666666);">
+
+                    White + Gray
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>✨ Clean Minimal Style</h2>
+
+                    <p>
+                        Best for tech videos,
+                        tutorials and modern creator channels.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #ff512f, #dd2476);">
+
+                    Orange + Red
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>🔥 Fire Theme</h2>
+
+                    <p>
+                        Best for action edits,
+                        battle thumbnails and energetic videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #00f260, #0575e6);">
+
+                    Green + Blue
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>🌍 Fresh Creator Look</h2>
+
+                    <p>
+                        Perfect for vlogs,
+                        tech content and cinematic videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #fc466b, #3f5efb);">
+
+                    Pink + Blue
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>💜 Trending Shorts Style</h2>
+
+                    <p>
+                        Excellent for Shorts,
+                        reels and reaction content.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+
+                    Gold + Yellow
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>👑 Luxury Theme</h2>
+
+                    <p>
+                        Great for motivation videos,
+                        money edits and premium thumbnails.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #8e2de2, #4a00e0);">
+
+                    Purple + Dark Blue
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>🚀 Futuristic Theme</h2>
+
+                    <p>
+                        Best for AI videos,
+                        gaming edits and cyber style thumbnails.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="combo-card">
+
+                <div class="color-box" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+
+                    Mint + Green
+
+                </div>
+
+                <div class="combo-info">
+
+                    <h2>🌿 Clean Modern Look</h2>
+
+                    <p>
+                        Perfect for educational videos,
+                        tutorials and aesthetic content.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+
+        © 2026 Creator Helper | Designed by Pawan
+
+    </footer>
+
+</body>
+
+</html>

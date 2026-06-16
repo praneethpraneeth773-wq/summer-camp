@@ -1,0 +1,333 @@
+<html>
+
+<head>
+
+    <title>Reaction Videos</title>
+
+    <link rel="icon" type="image/png" href="YouTube 2.png">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #050505;
+            color: white;
+            overflow-x: hidden;
+        }
+
+
+
+        body::before {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #9b5cff;
+            filter: blur(180px);
+            opacity: 0.15;
+            top: -150px;
+            left: -150px;
+            z-index: -1;
+        }
+
+
+
+        header {
+            background: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+            box-shadow:
+                0 0 25px rgba(155, 92, 255, 0.15);
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #9b5cff;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            border-radius: 15px;
+            background: #9b5cff;
+            padding: 8px;
+
+            box-shadow:
+                0 0 20px #9b5cff;
+        }
+
+
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #9b5cff;
+
+            text-shadow:
+                0 0 15px #9b5cff;
+        }
+
+
+
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: 50px auto;
+        }
+
+
+
+        .card {
+            background: linear-gradient(145deg, #111, #1b1b1b);
+
+            border-radius: 25px;
+
+            padding: 40px;
+
+            margin-bottom: 40px;
+
+            border: 1px solid rgba(255, 255, 255, 0.05);
+
+            transition: 0.4s;
+
+            box-shadow:
+                0 0 25px rgba(155, 92, 255, 0.1),
+                inset 0 0 20px rgba(255, 255, 255, 0.02);
+        }
+
+        .card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 0 35px rgba(155, 92, 255, 0.35);
+        }
+
+
+
+        .card h2,
+        .card h3 {
+            color: #9b5cff;
+            margin-bottom: 20px;
+            font-size: 34px;
+        }
+
+        .card p {
+            color: #d7d7d7;
+            line-height: 1.9;
+            font-size: 20px;
+        }
+
+
+        .frame-video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+
+            overflow: hidden;
+
+            border-radius: 25px;
+
+            border: 3px solid #9b5cff;
+
+            margin-top: 25px;
+
+            box-shadow:
+                0 0 30px rgba(155, 92, 255, 0.35);
+        }
+
+        .frame-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+
+        .tips-list {
+            margin-top: 20px;
+        }
+
+        .tips-list li {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #e4e4e4;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 16px;
+        }
+
+
+
+        @media(max-width:900px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .logo div {
+                font-size: 26px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .card h2,
+            .card h3 {
+                font-size: 28px;
+            }
+
+            .card p,
+            .tips-list li {
+                font-size: 17px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <div class="logo">
+
+            <img src="logo.png">
+
+            <div>
+                Creator Helper
+            </div>
+
+        </div>
+
+        <h1>😲 Reaction Videos</h1>
+
+    </header>
+
+
+    <div class="container">
+
+
+        <div class="card">
+
+            <h2>🎬 Reaction Tutorial</h2>
+
+            <p>
+                Watch this reaction video tutorial and learn
+                how creators make funny reactions,
+                meme edits and viral entertainment videos.
+            </p>
+
+            <div class="frame-video">
+
+                <iframe src="https://www.youtube.com/embed/FsnvgkZsCwY?si=DDROHi3x_qUnOSao" title="Reaction Video"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h2>📈 Trending Reaction Ideas</h2>
+
+            <ul class="tips-list">
+
+                <li>😂 Funny Meme Reactions</li>
+
+                <li>😱 Horror Video Reactions</li>
+
+                <li>🔥 Viral TikTok Reactions</li>
+
+                <li>🎮 Gaming Rage Moments</li>
+
+                <li>🎵 Music Video Reactions</li>
+
+                <li>🤣 Comedy Clip Reactions</li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h2>🖼️ Thumbnail Tips</h2>
+
+            <p>
+                Use shocked face expressions,
+                glowing arrows, circles,
+                big bold text and dramatic lighting
+                to increase clicks and engagement.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h2>🤖 AI Thumbnail Prompt</h2>
+
+            <p>
+                Create an ultra high CTR reaction YouTube thumbnail
+                with shocked face expression,
+                glowing arrows, dramatic lighting,
+                purple neon colors, circles,
+                bold text and cinematic background.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+
+        © 2026 Creator Helper | Designed by Pawan
+
+    </footer>
+
+</body>
+
+</html>

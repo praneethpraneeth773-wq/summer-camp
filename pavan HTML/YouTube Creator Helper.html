@@ -1,0 +1,455 @@
+<html>
+
+<head>
+    <title>YouTube Creator Helper</title>
+    <link rel="icon" type="image/png" href="YouTube 2.png">
+
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0d0d0d;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #111, #1b1b1b);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff2e63;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            border-radius: 15px;
+            background: #ff2e63;
+            padding: 8px;
+            box-shadow: 0 0 20px #ff2e63;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400') center/cover;
+        }
+
+        .hero-box h1 {
+            font-size: 65px;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 0 0 20px #ff2e63;
+        }
+
+        .hero-box p {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 35px;
+            background: #ff2e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 20px #ff2e63;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            background: #00e5ff;
+            box-shadow: 0 0 20px #00e5ff;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+            color: #00e5ff;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 25px;
+            transition: 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.5);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #ff2e63;
+        }
+
+        .thumb {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .colors {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .color-box {
+            width: 180px;
+            height: 120px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .c1 {
+            background: linear-gradient(45deg, red, black);
+        }
+
+        .c2 {
+            background: linear-gradient(45deg, yellow, purple);
+        }
+
+        .c3 {
+            background: linear-gradient(45deg, #00e5ff, #ff00c8);
+        }
+
+        .more-btn {
+            padding: 18px 55px;
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #00e5ff, #0077ff);
+            color: white;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+        }
+
+        .more-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 45px rgba(0, 229, 255, 0.7);
+        }
+
+        .more-btn:active {
+            transform: scale(0.95);
+        }
+
+        .font-box {
+            text-align: center;
+            padding: 20px;
+            background: #151515;
+            border-radius: 20px;
+        }
+
+        .font1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 38px;
+        }
+
+        .font2 {
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+
+
+        .prompt-box {
+            background: #151515;
+            padding: 25px;
+            border-left: 5px solid #00e5ff;
+            border-radius: 15px;
+            line-height: 1.8;
+        }
+
+        .tools a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background: #ff2e63;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .tools a:hover {
+            background: #00e5ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111;
+            color: #aaa;
+        }
+
+        @media(max-width: 700px) {
+            .hero-box h1 {
+                font-size: 42px;
+            }
+
+            .hero-box p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+
+            <img src="logo.png">
+
+            <div>
+                Creator Helper
+            </div>
+
+        </div>
+
+        <nav id="navbar-links">
+            <a href="#thumbs">Thumbnails</a>
+            <a href="#ideas">Ideas</a>
+            <a href="#fonts">Fonts</a>
+            <a href="#tools">Tools</a>
+            <a href="login.html" id="auth-nav-link">login</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-box">
+            <h1>Create Viral YouTube Content</h1>
+            <p>Thumbnail Ideas • AI Prompts • Trending Topics • Creator Tools</p>
+            <a href="#thumbs" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="thumbs">
+        <h2 class="title">Thumbnail Inspiration</h2>
+
+        <div class="cards">
+            <div class="card">
+                <a href="Gaming Thumbnails.html">
+                    <img class="thumb" src="g1.jpeg">
+                </a>
+                <h3>Gaming Thumbnails</h3>
+                <p>Bright colors, glowing text, reaction faces and action scenes.</p>
+            </div>
+
+            <div class="card">
+                <a href="Reaction Thumbnails.html"> <img class="thumb" src="r1.jpeg">
+                </a>
+                <h3>Reaction Thumbnails</h3>
+                <p>Use shocked faces, arrows, circles and big bold text.</p>
+
+            </div>
+
+            <div class="card">
+                <a href="AI Cartoon Thumbnails.html">
+                    <img class="thumb" src="a1.jpeg"></a>
+                <h3>AI Cartoon Thumbnails</h3>
+                <p>3D Pixar style scenes with cinematic lighting and emotions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ideas">
+        <h2 class="title">Trending Video Ideas</h2>
+
+        <div class="cards">
+            <div class="card">
+                <a href="Alok Free Fire Videos.html">
+                    <img class="thumb" src="f1.jpeg"></a>
+                <h3>Alok Free Fire Videos</h3>
+                <p>Gameplay highlights, funny moments and rank push videos.</p>
+            </div>
+
+            <div class="card">
+                <a href="Minecraft Challenges.html">
+                    <img class="thumb" src="m1.jpeg"></a>
+                <h3>Minecraft Challenges</h3>
+                <p>Survival challenges, lucky block and funny Minecraft content.</p>
+            </div>
+
+            <div class="card">
+                <a href="AI Telugu Stories.html">
+                    <img class="thumb" src="ai1.jpeg"></a>
+                <h3>AI Telugu Stories</h3>
+                <p>Emotional and funny AI cartoon stories in Telugu.</p>
+            </div>
+
+            <div class="card">
+                <a href="Reaction Videos.html">
+                    <img class="thumb" src="r2.jpeg"></a>
+                <h3>Reaction Videos</h3>
+                <p>Funny reactions, memes and viral internet moments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="title">Trending Color Combos</h2>
+
+        <div class="colors">
+
+            <div class="card">
+                <div class="color-box c1">Red + Black</div>
+            </div>
+            <div class="card">
+                <div class="color-box c2">Yellow + Purple</div>
+            </div>
+            <div class="card">
+                <div class="color-box c3">Neon Blue + Pink</div>
+            </div>
+
+
+        </div>
+        <div style="text-align:center; margin-top:40px;">
+            <a href="Trending Color Combos.html"><button class="more-btn">
+                    Click Here To More
+                </button></a>
+        </div>
+    </section>
+
+    <section id="fonts">
+        <h2 class="title">Best Thumbnail Fonts</h2>
+
+        <div class="cards">
+            <div class="font-box">
+                <div class="font1">ANTON FONT</div>
+            </div>
+
+            <div class="font-box">
+                <div class="font2">POPPINS FONT</div>
+            </div>
+
+            <div class="font-box">
+                <div class="font1">BEBAS STYLE</div>
+            </div>
+
+        </div><br>
+        <center> <a href=" Best Thumbnail Fonts.html"><button class="more-btn">
+                    Click Here To More
+                </button></a></center>
+        <br>
+    </section>
+
+    <section>
+        <h2 class="title">AI Prompt Section</h2>
+
+        <div class="prompt-box">
+            Create an ultra high CTR YouTube thumbnail in 3D cinematic style. Add glowing text, emotional face
+            expressions, vibrant colors, dramatic lighting, arrows, circles and blurred background. Make it look like a
+            professional viral YouTube thumbnail.
+        </div>
+    </section>
+
+    <section id="tools">
+        <h2 class="title">Free Creator Tools</h2>
+
+        <div class="tools" style="text-align:center;">
+            <a href="https://www.canva.com" target="_blank">Canva</a>
+            <a href="https://www.capcut.com" target="_blank">CapCut</a>
+            <a href="https://www.photopea.com" target="_blank">Photopea</a>
+            <a href="https://pixlr.com" target="_blank">Pixlr</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Creator Helper | Designed by Pawan
+    </footer>
+
+
+
+    <div id="popup"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:5000; padding:20px;">
+
+        <div
+            style="background:#111; max-width:700px; width:100%; padding:35px; border-radius:25px; border:1px solid #00e5ff; box-shadow:0 0 30px #00e5ff; position:relative;">
+
+            <button onclick="closePopup()"
+                style="position:absolute; top:15px; right:20px; background:red; color:white; border:none; width:35px; height:35px; border-radius:50%; cursor:pointer; font-size:18px;">X</button>
+
+            <h2 id="popupTitle" style="color:#00e5ff; margin-bottom:20px;"></h2>
+
+            <p id="popupText" style="line-height:1.8; color:#ddd;"></p>
+
+            <h3 style="margin-top:25px; color:#ff2e63;">Best Tips</h3>
+
+            <ul id="popupList" style="margin-top:15px; padding-left:20px; line-height:2;"></ul>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

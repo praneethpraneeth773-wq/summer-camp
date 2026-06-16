@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Creator Helper</title>
+
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background: #0d0d0d;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #111, #1b1b1b);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff2e63;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            border-radius: 15px;
+            background: #ff2e63;
+            padding: 8px;
+            box-shadow: 0 0 20px #ff2e63;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400') center/cover;
+        }
+
+        .hero-box h1 {
+            font-size: 65px;
+            color: white;
+            text-shadow: 0 0 20px #ff2e63;
+        }
+
+        .hero-box p {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 35px;
+            background: #ff2e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 20px #ff2e63;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            background: #00e5ff;
+            box-shadow: 0 0 20px #00e5ff;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+            color: #00e5ff;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 25px;
+            transition: 0.3s;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.5);
+        }
+
+        .card h3 {
+            margin-top: 15px;
+            color: #ff2e63;
+        }
+
+        .thumb {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .info {
+            margin-top: 10px;
+            color: #00e5ff;
+            font-size: 14px;
+        }
+
+        .colors {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .color-box {
+            width: 180px;
+            height: 120px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .c1 {
+            background: linear-gradient(45deg, red, black);
+        }
+
+        .c2 {
+            background: linear-gradient(45deg, yellow, purple);
+        }
+
+        .c3 {
+            background: linear-gradient(45deg, #00e5ff, #ff00c8);
+        }
+
+        .font-box {
+            text-align: center;
+            padding: 20px;
+            background: #151515;
+            border-radius: 20px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .prompt-box {
+            background: #151515;
+            padding: 25px;
+            border-left: 5px solid #00e5ff;
+            border-radius: 15px;
+            line-height: 1.8;
+        }
+
+        .tools a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background: #ff2e63;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .tools a:hover {
+            background: #00e5ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111;
+            color: #aaa;
+        }
+
+        @media(max-width:700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero-box h1 {
+                font-size: 42px;
+            }
+
+            .hero-box p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+
+            <div>
+                Creator Helper
+            </div>
+
+        </div>
+
+        <nav>
+            <a href="#thumbs">Thumbnails</a>
+            <a href="#ideas">Ideas</a>
+            <a href="#fonts">Fonts</a>
+            <a href="#tools">Tools</a>
+        </nav>
+
+    </header>
+
+
+
+    <section class="hero">
+
+        <div class="hero-box">
+
+            <h1>Create Viral YouTube Content</h1>
+
+            <p>
+                Thumbnail Ideas • AI Prompts • Trending Topics • Creator Tools
+            </p>
+
+            <a href="#thumbs" class="btn">
+                Explore Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="thumbs">
+
+        <h2 class="title">Thumbnail Inspiration</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img class="thumb" src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200">
+
+                <h3>Gaming Thumbnails</h3>
+
+                <p>
+                    Bright colors, glowing text and action scenes.
+                </p>
+
+                <p class="info">
+                    Best for gaming creators
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <img class="thumb" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200">
+
+                <h3>Reaction Thumbnails</h3>
+
+                <p>
+                    Shock faces and viral editing style.
+                </p>
+
+                <p class="info">
+                    Great for reaction videos
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <img class="thumb" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200">
+
+                <h3>AI Cartoon Thumbnails</h3>
+
+                <p>
+                    Pixar style AI thumbnail ideas.
+                </p>
+
+                <p class="info">
+                    Trending AI creator style
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="ideas">
+
+        <h2 class="title">Trending Video Ideas</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Gaming Videos</h3>
+
+                <p>
+                    Funny moments and rank push videos.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>Minecraft Challenges</h3>
+
+                <p>
+                    Survival and lucky block challenge content.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>AI Story Videos</h3>
+
+                <p>
+                    Emotional and funny AI cartoon stories.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section>
+
+        <h2 class="title">Trending Color Combos</h2>
+
+        <div class="colors">
+
+            <div class="color-box c1">
+                Red + Black
+            </div>
+
+            <div class="color-box c2">
+                Yellow + Purple
+            </div>
+
+            <div class="color-box c3">
+                Neon Blue + Pink
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="fonts">
+
+        <h2 class="title">Best Thumbnail Fonts</h2>
+
+        <div class="cards">
+
+            <div class="font-box">
+                ANTON FONT
+            </div>
+
+            <div class="font-box">
+                POPPINS FONT
+            </div>
+
+            <div class="font-box">
+                BEBAS STYLE
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section>
+
+        <h2 class="title">AI Prompt Section</h2>
+
+        <div class="prompt-box">
+
+            Create an ultra high CTR YouTube thumbnail in 3D cinematic style.
+            Add glowing text, emotional face expressions, vibrant colors,
+            dramatic lighting, arrows, circles and blurred background.
+
+        </div>
+
+    </section>
+
+
+
+    <section id="tools">
+
+        <h2 class="title">Free Creator Tools</h2>
+
+        <div class="tools" style="text-align:center;">
+
+            <a href="https://www.canva.com" target="_blank">
+                Canva
+            </a>
+
+            <a href="https://www.capcut.com" target="_blank">
+                CapCut
+            </a>
+
+            <a href="https://www.photopea.com" target="_blank">
+                Photopea
+            </a>
+
+            <a href="https://pixlr.com" target="_blank">
+                Pixlr
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        © 2026 Creator Helper | Designed by Pawan
+    </footer>
+
+</body>
+
+</html>
