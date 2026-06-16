@@ -1,0 +1,191 @@
+<html>
+    <head>
+     <title>Emergency Support for Women</title>
+    </head>
+    <style>
+        body{
+            background-color: pink;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        nav{ background-color:pink; 
+    padding:5px; display:flex; 
+    align-items:center; 
+    padding-left:0px; 
+    text-align: center; 
+} 
+nav a{ 
+    color:black; 
+    padding:15px; 
+    text-decoration:none; 
+    font-size:25px; 
+    text-align: center; 
+} 
+nav a:hover{ 
+    color:mediumvioletred;
+ } 
+ .logo{ 
+    display:flex;
+    align-items:center;
+    margin-left:0px; 
+    text-align: center; 
+} 
+.logo img{
+     width:70px; 
+     height: 70px; 
+     margin-left: 10px; 
+     margin-right: 10px; 
+    } 
+    .logo h1{ 
+        color:deeppink;
+        margin:1px; 
+        font-size:40px; 
+        margin-left:-5px; 
+    } 
+    header{
+        background-color:#e75480;
+        color:white;
+        text-align:center;
+        padding:20px;
+        border-radius:20px;
+        box-shadow:0px 4px 10px gray;
+        }
+.gallery{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+}
+
+.image-box{
+    width:220px;
+    height:220px;
+    border:4px solid #d85c8a;
+    border-radius:20px;
+    overflow:hidden;
+    background-color:white;
+    box-shadow:0px 3px 8px gray;
+    transition:0.4s;
+    margin-top: 15px;
+}
+
+.image-box:hover{
+    transform:scale(1.05);
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px black;
+    font-family: Georgia, serif;
+}
+
+th{
+    background: #d96c9d;
+    color: white;
+    padding: 12px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+td{
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:hover{
+    background: #ffd1e6;
+    transition: 0.3s;
+}
+
+td{
+    font-weight: bold;
+    color: black;
+}
+article{
+    background-color:#f5f5f5;
+    margin:15px;
+    padding:20px;
+    border-left:5px solid deeppink;
+    border-radius:12px;
+}
+    </style>
+    <body>
+        <nav>
+        <div class="logo">
+<img src="logo.png">
+
+<h1>SafeHer</h1>
+  </div>
+ 
+     <a href="women.html">Home</a>
+     <a href="about.html">About</a>
+     <a href="safety.html">Safety Tips</a>
+     <a href="emergency.html">Emergency</a>
+     <a href="selfdefence.html">Self Defence</a>
+     <a href="contact.html">Contact</a>
+     </nav>
+        <header>
+            <h1>Emergency Support for Women</h1>
+            <p>Quick action can save lives.</p>
+        </header>
+        <article>
+        <div class="gallery">
+            <div class="image-box">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEBIVFRUVFRUVFRUQDxAQFRUQFRUXFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGi0lHx0tLS0rLS8tLS0rLS0tLS0tLS0tLS0tLS0vLSstLS0tLS0tLS0tLS0tLS0tKy0tLS0tLf/AABEIALwBDAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAQIDBQYHAAj/xAA9EAABAwIEAwUECQQCAgMAAAABAAIDBBEFEiExBkFREyJhcYEykaHBByNCUmJygrHwFDPR4WOSsvEVQ8L/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREAAgICAgEEAQQDAQAAAAAAAAECEQMhEjEEIjJBUYETUnHBYZHRQv/aAAwDAQACEQMRAD8AfGUSwoOMohjl4zO4MjKmYUKxymY5IAphUzShWuUrXoAJBTwVA1yka5MRMCngqEFPBTAlBTwVCCngpiJQV66YClumA8FKCm3SgoEPXki8mIVeSLyAPLyReQB5ISlUlPFmcAPVMAunhAbcp0UOY3Ujxc5QpZ3CNieu/oaKjGqgMbYbrBV8ReSStRXuLySh4qDTMVxuduzpUeKoz9HhoGrhqjnUQaMxVzTUdzc7Ku4hksMoTt2SYTHJMzjbks7LF1WhxRwaD1Wfa0udcrqgzOSBnQoqKm0U0cNzZGFoGipyEka6MqdhQsZRDSsBhDCpmFDNKmYkMJYVM0oZhUzUAENKlYUO0qVpQIIaVIFAwqUFMCQJwTAU4JiJAUqYEoKYh4ShNulamA9KmpboAVeukXkCPLy8kTAUK3pIg1l+ZVZTNu4K2lOwVR0rFQ+lZ9oqsxaYuOUbKzqH5WqtDOZ5rPK9cUaY/wBwDHSqWSG+gRLhYJkQWCRo2RyMyt0WQxt1rkrWV81hZY7HHZtEn2OK1Zi6qMyPPRLDQK3ipeQ5q3ocLtut3OkTVlDT4XYZiqasNnmy3WNxhjNFgKp3eKINyYmqRrWFTsKFYVOwoZISwohiFjKKakMmYpmqBimakBM1TNChYpmoAlanhRhSNQIeE4FNSpgPCcFGCnBAD7pzUy6c0qhD15IvIEOXk1eTAVeSJboAJo/aCtI9XKooz3lZxOsCU0xUNrXXNkM46pS/UlNjHNYN27NkqGHdSbC6a9Q1kthYJXQdlZXSXJWUxiXWw3K1GJHIwkrO4ZSGWXMdr6KYfbLfQZg+G6ZnK2hiF0ZKwMZYdFDGLMJKUn8iRk+Kqjkuc10/fK2XE013OWFqIyXErq8eOjPK9m8YURGhYyiGFSASwohj0EHKVjkgDmFEMWXxjiTsDkjY18m5MhdkaOXdaQXOPmANN76Z+q4mrJNDO5g6QhsAt0PZgEjzJW0cDatmbyJHTJ5WxC8z2Rj/AJXsiv5BxBPoqmp4wo49nvlP/DEbe+Qt+F1zntG29gFx3e9znEk7kbD33UYC0/Sgu2aQxZsntidYwXiKnqTljc5r/uStDXEdW2JB99/BXQC4jTTuje17d2kOHLULs9FUiSNkjTcOaHD1CxyRS3EqeKeOlMIXkl15ZEDgU4Jl0oKAJCnNKjuntTAfdKmJUxDrrybdeumA5eJSXSEoEE0e5Rxf3VXQOtdFdp3FMmVFA7n8kXGFXQuu9WQNgsoGsiInVDNZmffkE97rAlegOVhKlu2C0ii4hcXODGorB6IMCbFBmeXlWbNAi9Df0C1RuQE3EnZYz5Jkb7yITiOezLKWNdmAxuS5KpRDdWVcMxT4aXRdsPSjGW2HxlTsQ0ZRDCpAmap4woWoiNSBg+Laa1Qb37wDhYkbAN5eQPqqxpWu44pLxtlG7Ha/ldofjlPosiupybimej4EYOL0rTHZivEleAS2UHqcRQ/qulfR/XZ6csJ1jdb9J1Hpy9FzMq+4Gr+yq2sJ7swLP1jvM/8A0PUIatNHB5+O4cvr+zq2ZLdQApwK5jyaJQU4FRgpwKYEl08FQ3UjSmIkulumAr10APXk269dADrrybdeugCVpTu07ihBTA/ulZ5GXAmoNSSj53WCrsL5ourdooi9FvsFnl2HUoiRvdsq3NeRo9VavNgpWxsiay1gvVOgTGzXcm1r9FbeiF2A0h7xKo+JKu5srKKawJWUr5C95SirZb0BNiu66nc4DRPADQoMpOq6DIZHKEVHIFSxhyKjDlbRNlyxwU8blTszIhjnKKHYdX04liex2zmke8LmjWkXDt2ktP5mmx/ZdEZI7osdxFTZJybWEgDv1Duu+GU+q2x+1o6fDyccyX7tf8JcAwCarL+yyNbGAZJJpGxRsDjZuZx5kg28leYDwO+WeanqXthkY1zWMMseeSoLM0WVpvnjIBJI5c0LwPVtJloZIXzR1gY0tikjikEkRL2OY6Qht99CddN9jfcd1Zgmw+dsRhniZYwvlzyCGCW1P2jhuXNBv5kclooxq2ejkyZf1HjTq+v9X9/yuiqwDD6WeiqoQx5rWxmoBfE0BrYH96KM3zFxYTcWGpHRY0vLbOb7TSHt/M03H7W9VuH1TosUfW0cZ7IyPeBUHsGuEjLytdm2bd7rfp8FjaplnOAy2ubZHZ22vpldzCTdV/gqMefJPqSv+L7X4Or4FU9pAx4Nw4XB6tOoViCsZ9H2IXgdEd4nkDX/AOt2rfmPRbIseGhxY8NP2i11rdb7LnnCpOjxHadPskBTwUM2YKRsoUCJrqQFDCQKYOQBJdLdMBS3TEPS/wA5/wAKYDY+XyXif8fJNAOuvXTL/wAuFFNPlQot9A2kEBya4aFVNRXS/Zb8UZSylzQXb2SzYnGNseOSbD8N2U9W+ygon6KHEp1y3o2rZDROzSnwCPxCWwVXgZ7zipMVm1KENj8LdmcSeqfiz7NKZgrdLofiCWzSqkTHsqnT9wqnda6JdL3EBAbuWkFsUmSSxkhE08Nmp7mXUzGJtioxMVYEbFWjqsoycqVtWQuxwMLNnDWjqjoaxqw0daio6vxUOJVm6jqmeCo+NIA+ISN3jNz+U6H97/pVSytPVF00zpSIgC/OcmUC5dm0sB11RBVJBbW12jOwuAIJFwCCRci9jtcbea0eH4hNPMyGjiYx8hDQT9Y9x11fLJflf3eAVNiuDVFI/s6mNzHa2vYhwBtcEEg/K6joKx8MjJYnZXscHNcOTgbjzHgq6Z9HGssFJfK19fknxiKZkr2VOftWHK4SOLiD5nlaxBGhBCAK3rK/Ca2cVNa6WnkcbzxNbJLFK7KRmjezvx62JB00t4rG4sYe2k/ps3Y5z2fae1kvpdDjW7HjyuXpcWmlvWvwH8G1IZUta52US3jJt9rdh9LOH613/C61hY2PPq1obY21AFrj3L5jcSO832mkOb+ZpuP2XU4OIw9kb2k3LWuzbakck3NxSaPI8zFFZHfztf2dRqMMgeBeNh8QAD7xqqms4WYdYnlp10d3h79x8VQYZxhYgSHTa45eYWwo8XZI3M1wcPwm/wD6T5wl2jheOS9rsydVg08d+7mGurDm5dN0CZHDT+bf5W9qqwBtxq4jQDz5lQzUccw77dbe0NCPXms5QV+ljV1bMUKh3x/ypoXSPOVjXOPRoLum9vJaihwCEHvuL/A6D1srxkLWNswADo0AD3BOOFvbJlOjMUWCSO1lcGfhHedvztoEDjLooXZWuN9d7Hl5K7x2ps3TTyWBxGVz3XJJPispySfFI3x421yYdVY0xg0NyqKsx83sPD9v57kLiURLcw3G48FnZpl24mnHRyZItPZdTcQSE2utTgtQXRA3XMpJFteCqrNGW9Fn5cbgXgdSNjQG4QOLPsURhztSEJi+rl5J2/IVgLe6T4oHEpe8fNWGEi0XvVPVau9VS7JL7CxZipeKZNFe0jbMCzvFHJH/AKBdFBK/Sy9RjVRyFeoX7roS0Zt7LYbKaHZCtdopWS6LJlHLWhOyKRjFKGLsciKImMRLAkbGp4oiSABcnYDmVnKRSiLGwLd/RRhgdUunLdIWHKSNO1f3R62zJvD30fvkaHzOyA62G9vEldCpaOOkpxDALDUuPMuO5J/myI2nyfQPekYz6VGh1Oc1i5jg8Hpdwba/5SfeuStK6bx/K/8Ap5SBf2b3+7mFz46A/BcvBWkFcbPW8Sarj9Et15NBSXTo7HIcVf8ACNNJOHRRlv1dyS8kDITduw8SP0rLy1TRzueg1Wx+iipvNMMh1bHYjY5XOuCf1fBXKL4Nnl+XkxTaipbskqxJC7LINeRBuCPAp9Ji74zmjcWnqPmOas+NGt7QAEZtS4NN8uwsfHTZUGRcMslOjleNLo6NwlxT/UHspB9Y1pdcDRzQQCfA6jRavttLA2XF+H67sKuJ5NhnDHfkf3ST5Xv6LqldVOZra/loVop6BQssqeUtd4I7/wCRba58f9LN4LjsdQSwHLI3eN1r5fvDqP2Vi9oIWkZyitESxpvZWYpO55/Drb/ao6iMFXNVGW6t18OqDqW6Xt5+S533s3XWiiczXX3rL8QYYYz2jPYO4+64/IrcSwhw7vS6DfT6FrgCDoQdRY7hbYsvB2Y5MfJHNnrRcE1WSUg7GyDx7BjCS5oJjOt98ng7w8VX4fMWvBBXc6yQ0cSuMtnYab2roSt1eouH6vtImu969WO7y8aUalR3p2rLWl/te9U7Rdw81bwf2fRV1NHd1+iF2J9F6PZCyvEj9QtM52iyHFD9UL3B8FBNJrZSUel1W9v30bSv1XZXpML2WkT9EySXVDtemPOqwrZpZkgxTNapGsUgYtGxoZHESbAXJ0Fuq6rwHwh2QE0zbvI0BHshVf0bcN9o7+olHdHsA8z95dYYANlrhx3tmWTLWkAvpHuNicrR05oWqjsXMPLby5K7CrsVh1a/9J+XzWuXH6bJhlbdMw3ElFdjwRcFpBHX+aLi87ezcWOOrSR5gbH1Fj6r6LxGlDh6fFc34h4SimeTqx33m63/ADNO/pZZYpxj6ZdHXHJOPrh3VHNJKn7o96bHBLLoASPDQX89ltKPhKNhPa3cRt93wPiFbQ0zBZuUADaw0XQ8sI+1GUv183vlS+jG0XC7tHSeyTrlFyB11XRsLw+KjgdLHcEC4cCQXPOjR5X5KaCAFulvRV/EErhGyEDu5i8nyFgPiT7ly5s8pI1hhhBWgDCsOfUyZWb6uc517AX1J67rWUvBkI/uSuefwZWD5lZfAsXkpXucwA5m5XB19r30I2K0rONWut2kLhru14fYeRAXJDh8lnq3gKncO6+Rp63a4eoI+aun0kvZBocHuDQMzhlzEC1za+6nosUZKAY3Bw523HmNwjO2C3ST6JTa2YnD+GXGrjllaSQ8EkPDAB0GtyL2uOYW1c7lpfoLG3uUoc0pzyD0Hlore0KU7dgL1DJCCipmhRWWb7BFXPT22QsjAfMK7fHdCOplLKTKUssf58eqFn4Uo5gTZ0DzqHRG8eb8UR0t+UtVxVU1tQkiGiqOSUOmTLHGXZQ8OU0tO90Ug7tzle3VjvI/I6o7EH2cFcUri29ufJUWNus4HxUZJcpWSo8VRfRu+q9ELG7KnCS0foquaruQPFZw7FLo0LH3CynE+60sJ7qyvEj9SiPuD4Mc499G00uqrHu75RFG7Vd9ek5/ktWyaovLdAEaJzKmwssXE0sqmhWGDYe6eZkTftHXwbzKjxDDZad+SZhafgR1B5rdfRlhoDXVDtycrb9B/v8AZCVuim6VnQcMpWxMaxgsGgDRWMLboSDZFQOsV3wOKQU2MKHEIgY3Dwv7tURdNfYgg7HRbySaohOnZk5HG1iqisp7m6s52lryDuDZQyMXkfJ6a0ZqsprhVjWWdb91p6in3VRU06dlJiwxjcaLSYJhrJ4HiVod37aj8I/ys7Aeq23BbQYpBzD/AIFo/wAFXhjynRGdtYzGY1wW9l3Qd5v3TuPIrMPhLTZwIPQixXdZKZUuL4BHMCHt15OGhHqqy+H8xMMfk1pnJo4je40PW9lbQYrNGNZyR0faT/y1UPEvCtVBd0RMjPwjvgeXNYqeqcdCT436qsXiRW2wn5LfR0il4zjBtKP1R6+9pP7FXlDjEE39qVrj93NZ3/U6rhkkp5FRmoPVby8eL60RHPJd7PoFzikDlxfBuJqmNwa2d4B5Odnb/wBXXC1VNx5Kw2miZIOrPqnfMH3Bc0vFkutm8fIi+zoBKY4rPYfxxRSmznuhP/M0Bv8A3FwPWy0LbOAc1wc07FpBBHgRusZQlHtGsZxfTIpHcrIeSMckU8dUO8hZs1Q2No1/mqz+Otu4fmCvxLqqjHIu8D4hS+0RIlkdZnoqAy/WjzV5U+wPJZuE3mRj7ZEujZsf3PRY/HJLuK1QPcWMxaTvlEF6hPozUzdSiKHZNaLkp1OLFdvwc/yWzBoquaQgq5pxogJqO5upUWxuSR2irooqlhZPHfzGx6gqrnw19LCI4QXMB8yNea1WQjWykZlOh0W7xpkRy8XaWvogondxt+gVfJUPdVsaL5W79CSFay055IYPyub0Jset02npF4pJNuu0y4D0haSlpxdEWXSlaOW6M7jkGVwd94WPmP8AX7KtcdFpMcZeO/Rw+OnzWemj/mi87yYccjo7sEuUNgErkDOwKxljsq+ZywTNqBOzWp4Ikt2oP4D/AOSzjbdPVabhJga2R51uWgel/wDK3we9MnPvGzUNlBSSAHRDdm46n3JQ4jkvQ5fZ53HeiKTDibm/z0WT4p+j+GpBcBkk++wWv+Yc1tI6m6kDwUuMX0OUpfJ8zcScMVFG49o27OUjQcvr0KzrwvrDEMNjlaWvaCCLEEAhcg41+jIszS0m2pMZ2/SeXknbXZJyoyEajkrilqM7fFVVTC5ji17S0jcOFim0k+R3gUwD5LXWi4C/qn1UcFLI5md13/aYIm6vc5p0OnxIWaldquufQfhlmT1RHtEQsNvstAfJbzJYP0pNa2O66NvXYMd4zfwO/wDtUFTEW7hbskc1X4j2bwbt2+1tZceXx09o6sfkNaZj6OnL33Pst1PyHqocejuQfEK6wynfO/6ppbA06G1jK7mb8m/zy9xNhhaA7TfksJ4WoWavJ66Zmq4Wj9Fk6Z/13qthiTPq/RYunNpR5rDH8lS6Ns/+36LBYw7vFbmd47P0WRqacFxJV4cbbM5ySRS0MBJKPhpADdTgBqglqV6CxnK5hJkACGdOhZJ0O6ZaqKRDZ3818rGElgcRe4abd0cwpMOrmTgkAtI5FPkbpZJBGGjuiyyV2btw4vWwxri3Q6hJNAHajzSRPOxUh02WmmjBOmOppbb6IvtRyQNUwOYTsbHUIXApC5lyU1KnRf6dwc/oOxLvRuHhf3G6pJI7BXeI/wBs+n7hVEw0XL5Pu/Btg9pU1Kp6ne6tqwqqkOq412ddaGtK3mCQNjjaOZaHe/VYJnL0XTKeIBo0+y39l2+MrbZzeRKkkP7UcyoxKCTbUc16VgI1UDu7qPBdbbRyxSY8BrxpceI0TJKR1iGvN+RIBsniU+CbQ1Tnkg206JafZe6tfBX0b6lshbJZzOTtiVZ5g7QhElg6KCYfwJ8eK7InPm7qv4MlxdwHT1jb2yv1s5u4K4ZxTwlPRPtK27L92QDQ+fRfTTdOarMVmJkjjIFnG98oLgR0J281LaWwjFydHAOH+Ea2rIDIXNGnfmBiblPMEi5HiAV3fg/Cf6Gkjp8weWl7nOAIBe9xcbA8hcD0R7WhosBb5nqTzKUqXJjaQYys67e5JaOYXIuzxHtf5b+6qZRnmELvYyZyBpmIOzvDwVu42GngnGTfY3Hik/lhHagCzRYDYAcvABUuMEytJsQG/eaW6+qtHIevP1bvIpZfVFoUHTMPiDLtIWNkpcr83itZiMpsspWSm5XFgw/LOjJkrSCKjENLKnnqk2VxQUpXdGCRzOTY986He8rwSOVk2RuKhc5SPQzkAf/Z">
+           </div> <div class="image-box">
+        <img src="https://www.bing.com/th/id/OIP.2TLP3HVDJBFXZCSnkr7aNwHaGJ?w=193&h=160&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2">
+           </div><div class="image-box">
+        <img src="https://www.bing.com/th/id/OIP.KPvf_gaAathrr3Tp9pemtgHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2">
+        </div><div class="image-box">
+        <img src="https://th.bing.com/th/id/OIP.OVi5XlkHj9dhyqiC4EVD0QHaH3?w=150&h=180&c=7&r=0&o=7&dpr=1.9&pid=1.7&rm=3"></div>
+    </div></article>
+    <table border="4">
+        <tr>
+            <th>S.NO</th>
+            <th>Helplines</th>
+            <th>Numbers</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Domestic Abuse & Violence</td>
+            <td>181</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Women Powerline</td>
+            <td>1090</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>National Emergency Number</td>
+            <td>112</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Cyber Crime Helpline</td>
+            <td>1930</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Police Emergency</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Ambulance</td>
+            <td>108</td>
+        </tr>
+    </table>
+    </body>
+</html>
