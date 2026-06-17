@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Animal Rescue Websites</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background-image:url('https://media.istockphoto.com/id/2233217749/photo/golden-sunrise-illuminating-the-grasslands-of-kaziranga-national-park-in-assam-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=WGGipGgRxyDIxlcdPi9_EyDTUzVJteLFzvRmX2Y_p5E=');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+header{
+    background-color:greenyellow;
+    text-align:center;
+    padding:5px;
+    border-radius:20px;
+}
+
+nav{
+    background-color:yellow;
+    text-align:center;
+    padding:10px;
+    border-radius:20px;
+}
+
+nav ul{
+    list-style:none;
+    padding:0;
+}
+
+nav li{
+    display:inline;
+    margin:0 100px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+}
+
+main{
+    padding:40px;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:320px;
+    background-color:none;
+    padding:15px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+.card h2{
+    color:black;
+}
+
+.card p{
+    font-size:16px;
+}
+
+.button{
+    background-color:green;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color:darkgreen;
+}
+
+footer{
+    background-color:none;
+    text-align:center;
+    padding:10px;
+    border-radius:20px;
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>ANIMAL RESCUE WEBSITES</h1>
+<p>Learn and Protect Wildlife</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="home2.html">HOME</a></li>
+<li><a href="about2.html">ABOUT</a></li>
+<li><a href="images2.html">IMAGES</a></li>
+<li><a href="protect2.html">PROTECT</a></li>
+<li><a href="Rescue2.html">RESCUE</a></li>
+<li><a href="contact2.html">CONTACT</a></li>
+</ul>
+</nav>
+
+<main>
+
+<div class="container">
+
+<div class="card">
+
+<img src="data:image/png;base64,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">
+
+<h2>National Geographic</h2>
+
+<p>
+National Geographic shares wildlife videos, animal rescue stories, and nature information.
+</p>
+
+<a href="https://www.nationalgeographic.com/" target="_blank">
+
+<button class="button">Visit Website</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="data:image/png;base64,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">
+
+<h2>WWF</h2>
+
+<p>
+WWF protects endangered animals and helps save forests and wildlife.
+</p>
+
+<a href="https://www.worldwildlife.org/" target="_blank">
+
+<button class="button">Visit Website</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="data:image/png;base64,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">
+
+<h2>Animal Aid Unlimited</h2>
+
+<p>
+Animal Aid Unlimited rescues injured street animals and gives medical care.
+</p>
+
+<a href="https://www.animalaidunlimited.org/" target="_blank">
+
+<button class="button">Visit Website</button>
+
+</a>
+
+</div>
+
+
+
+</div>
+
+</main>
+
+<footer>
+
+<p>
+Author: MAHENDER YADAV <br>
+Email: mahenderyadav@gmail.com
+</p>
+
+</footer>
+
+</body>
+
+</html>
